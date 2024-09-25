@@ -1,17 +1,16 @@
-public class LargeIntMultiplication {
+//take long int value and multiply with a value and store in a variable and convert the variable to long and see the difference
+
+import java.util.Scanner;
+class LargestintMultiplication{
     public static void main(String[] args) {
-        // Declare two large int values
-        int num1 = 2000000000;
-        int num2 = 2;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter int value: ");
+        int a=sc.nextInt();
+        int c=a*2;
+        long d=c;
+        System.out.println("Int value is: "+c);
+        System.out.println("Long value is: "+d);
 
-        // Multiply two large int values and store in an int
-        int intResult = num1 * num2;
-
-        // Cast the result to a long after multiplication
-        long longResult = (long) intResult;
-
-        // Print the int result and the long result
-        System.out.println("Result of multiplication stored in int: " + intResult);
-        System.out.println("Result after casting to long: " + longResult);
+        sc.close();
     }
 }

@@ -1,17 +1,16 @@
+//take input in double caste to float and again to double print all three
 import java.util.Scanner;
 class FloatToDouble{
-    public static void main(String args[]){
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number: ");
+        System.out.println("Enter double value: ");
         double a=sc.nextDouble();
-        float castedToFloat=(float)a;
-        double castedToDouble=(double)castedToFloat;
+        float b=(float)(a*0.5);
+        double c=b;
+        System.out.println("double value is "+a);
+        System.out.println("float value is: "+b);
+        System.out.println("Double value is: "+c);
 
-
-        System.out.println("Double value is "+a);
-        System.out.println(("casted to float value is: "+castedToFloat));
-        System.out.println(("casted to double value is: "+castedToDouble));
         sc.close();
- 
     }
 }

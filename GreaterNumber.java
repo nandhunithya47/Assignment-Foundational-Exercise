@@ -1,29 +1,33 @@
+//take 3 number inputs from user and print if all the numbers are equal, all are different or atleast one is equal and which of the 3 is greater using logical operators
 import java.util.Scanner;
-class GreaterNumber{
-    public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter the number ");
-        int num1=scanner.nextInt();
-        System.out.println("Enter the Second number ");
-        int num2=scanner.nextInt();
-        System.out.println("Enter the Third number ");
-        int num3=scanner.nextInt();
-        if(num1==num2 && num2==num3 && num3==num1){
-            System.out.println("All are equal ");
+class GreatestNumber{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter First number");
+        int a=sc.nextInt();
+        System.out.println("Enyter second number");
+        int b=sc.nextInt();
+        System.out.println("Enyter Third number");
+        int c=sc.nextInt();
+        if(a==b&&b==c&&c==a){
+            System.out.println("All are equal");
         }
-        else if(num1>num2 && num1>num3){
-            System.out.println("num1 is greater");
-        }
-        else if(num2>num1 && num2>num3){
-            System.out.println("Num2 is greater");
-        }
-        else if(num1==num2||num2==num3||num3==1){
-            System.out.println("Atleast one pair is equal");
+        else if(a==b||b==c||c==a){
+            System.out.println("Alteast one is equal");
         }
         else{
-            System.out.println("num3 is greater");
-        }
-        scanner.close();
+            System.out.println("None are equal");
 
+        }
+        if(a>b&&a<c){
+            System.out.println(a+ " is graeter");
+        }
+        else if(b>a&&b>c){
+            System.out.println(b+" is greater");
+        }
+        else{
+            System.out.println(c+ " is greater");
+        }
+        sc.close();
     }
 }

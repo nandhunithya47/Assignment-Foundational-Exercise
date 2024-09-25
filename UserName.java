@@ -1,21 +1,21 @@
+//take user name are password as input match with predifined credentials if it matches print login successfull or pring unsuccessfull using logical operators.
 import java.util.Scanner;
-class UserName{
-    public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter the username ");
-        String un=scanner.nextLine();
-        System.out.println("Enter the password ");
-        String pw=scanner.nextLine();
-        String userName="Nandhu";
-        String password="Shree";
-
-        if(un.equals(userName) && pw.equals(password)){
-            System.out.println("Login Successfull ");
+class Passwordcheck{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the username: ");
+        String uN=sc.nextLine();
+        System.out.println("Enter the Password");
+        String pW=sc.nextLine();
+        String Username="Nandhu";
+        String Password="Shree";
+        
+        if(uN.equals(Username) && pW.equals(Password)){
+            System.out.println("Login Successfull");
         }
         else{
-            System.out.println("login failed");
+            System.out.println("Login Failed");
         }
-        scanner.close();
-
+        sc.close();
     }
 }

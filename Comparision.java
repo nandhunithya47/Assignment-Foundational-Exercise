@@ -1,18 +1,18 @@
+//Take 2 inputs and use comparision operators "==,<=,>=,<,>!="
 import java.util.Scanner;
-public class Comparision {
+class Comparision{
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter the first integer: ");
-        int a=scanner.nextInt();
-        System.out.println("Enter the second integer: ");
-        int b=scanner.nextInt();
-        
-        System.out.println("a==b: " +(a==b));
-        System.out.println("a!=b: " +(a!=b));
-        System.out.println("a>b:" +(a>b));
-        System.out.println("a>=b: " +(a>=b));
-        System.out.println("a<b: " +(a<b));
-        System.out.println("a<=b: " +(a<=b));
-        scanner.close();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int a=sc.nextInt();
+        System.out.println("Enter the second number: ");
+        int b=sc.nextInt();
+        System.out.println("(a==b):"+(a==b));
+        System.out.println("(a!=b): "+(a!=b));
+        System.out.println("(a<b): "+(a<b));
+        System.out.println("(a>b): "+(a>b));
+        System.out.println("(a<=b): "+(a<=b));
+        System.out.println("(a>=b): "+(a>=b));
+        sc.close();
     }
 }
